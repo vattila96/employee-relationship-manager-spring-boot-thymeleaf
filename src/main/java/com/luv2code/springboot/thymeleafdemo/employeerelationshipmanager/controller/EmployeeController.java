@@ -28,6 +28,6 @@ public class EmployeeController {
 		
 		theModel.addAttribute("employees", theEmployees);
 		
-		return "list-employees";
+		return "employees/list-employees";
 	}
 }
