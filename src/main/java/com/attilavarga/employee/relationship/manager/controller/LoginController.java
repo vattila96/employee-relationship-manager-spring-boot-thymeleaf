@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.employeerelationshipmanager.controller;
+package com.attilavarga.employee.relationship.manager.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,18 +8,11 @@ public class LoginController {
 
 	@GetMapping("/showMyLoginPage")
 	public String showMyLoginPage() {
-		
-		return "fancy-login";
-		
+		return "login";
 	}
-	
-	// add request mapping for /access-denied
 	
 	@GetMapping("/access-denied")
-	public String showAccessDenied() {
-		
-		return "access-denied";
-		
+	public String showAccessDenied() {	
+		return "access-denied";	
 	}
-	
 }

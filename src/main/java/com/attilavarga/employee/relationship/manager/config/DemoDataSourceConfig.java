@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.employeerelationshipmanager.config;
+package com.attilavarga.employee.relationship.manager.config;
 
 import javax.sql.DataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;

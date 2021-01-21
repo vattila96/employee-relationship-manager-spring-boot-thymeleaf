@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.employeerelationshipmanager;
+package com.attilavarga.employee.relationship.manager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class EmployeeRelationshipManagerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeRelationshipManagerApplication.class, args);
 	}
-
 }
