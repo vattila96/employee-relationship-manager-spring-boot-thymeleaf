@@ -1,7 +1,6 @@
-package com.luv2code.springboot.thymeleafdemo.config;
+package com.attilavarga.employee.relationship.manager.config;
 
 import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
@@ -14,16 +13,12 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	// add a reference to our security data source
-	
 	@Autowired
 	@Qualifier("securityDataSource")
 	private DataSource securityDataSource;
 		
 	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
-		// use jdbc authentication ... oh yeah!!!		
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {	
 		auth.jdbcAuthentication().dataSource(securityDataSource);
 		
 	}
@@ -46,13 +41,5 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.logout().permitAll()
 			.and()
 			.exceptionHandling().accessDeniedPage("/access-denied");
-		
 	}
-		
 }
-
-
-
-
-
-

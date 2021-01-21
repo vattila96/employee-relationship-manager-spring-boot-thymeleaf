@@ -1,4 +1,4 @@
-package com.luv2code.springboot.thymeleafdemo.employeerelationshipmanager.entity;
+package com.attilavarga.employee.relationship.manager.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,8 +10,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name="employee")
 public class Employee {
-
-	// define fields
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -27,12 +25,7 @@ public class Employee {
 	@Column(name="email")
 	private String email;
 	
-		
-	// define constructors
-	
-	public Employee() {
-		
-	}	
+	public Employee() {}	
 
 	public Employee(int id, String firstName, String lastName, String email) {
 		this.id = id;
@@ -46,8 +39,6 @@ public class Employee {
 		this.lastName = lastName;
 		this.email = email;
 	}
-
-	// define getter/setter
 	
 	public int getId() {
 		return id;
@@ -80,8 +71,6 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	// define tostring
 
 	@Override
 	public String toString() {
