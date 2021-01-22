@@ -1,4 +1,4 @@
-# Employee relationship manager app
+# Employee relationship manager app.
 
 Employee relationship manager web app with login possibility. CRUD functions are restricted based on roles.
 
