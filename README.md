@@ -1,6 +1,6 @@
 # Employee relationship manager app
 
-Employee relationship manager app with login possibility. CRUD functions are restricted based on roles.
+A web app for tracking employees with login possibility. CRUD functions are restricted based on roles.
 
 Images of the app:
 
